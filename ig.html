@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Dating Intelligence</title>
+    <style>
+        :root {
+            --primary-dark: #0f172a;
+            --accent-gold: #d4af37;
+            --text-light: #f8fafc;
+            --card-bg: #ffffff;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, system-ui, sans-serif;
+            background-color: #f1f5f9;
+            color: var(--primary-dark);
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header-icon {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 1.7rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            font-size: 1rem;
+            color: #64748b;
+            margin-bottom: 35px;
+            line-height: 1.5;
+        }
+
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .link-card {
+            background: var(--card-bg);
+            padding: 22px;
+            border-radius: 16px;
+            text-decoration: none;
+            color: var(--primary-dark);
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+            display: block;
+            position: relative;
+        }
+
+        .link-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            border-color: var(--accent-gold);
+        }
+
+        .label {
+            display: block;
+            font-size: 1.15rem;
+            font-weight: 800;
+            margin-bottom: 6px;
+        }
+
+        .description {
+            display: block;
+            font-size: 0.85rem;
+            color: #64748b;
+            line-height: 1.4;
+        }
+
+        /* Gender Specific Highlights */
+        .for-men { border-left: 6px solid #2563eb; } /* Trust Blue */
+        .for-women { border-left: 6px solid #db2777; } /* Power Pink */
+
+        .badge {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 900;
+            padding: 3px 10px;
+            border-radius: 20px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .badge-men { background: #dbeafe; color: #1e40af; }
+        .badge-women { background: #fce7f3; color: #9d174d; }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+
+        /* Subtle Attention Grabber */
+        @keyframes subtle-shimmer {
+            0% { opacity: 0.9; }
+            50% { opacity: 1; transform: scale(1.01); }
+            100% { opacity: 0.9; }
+        }
+        .featured {
+            animation: subtle-shimmer 4s infinite ease-in-out;
+            background: linear-gradient(to right, #ffffff, #fefce8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-icon">🗝️</div>
+        <h1>The Relationship Lab</h1>
+        <p class="tagline">Advanced psychological blueprints to attract, win, and keep the partner you desire.</p>
+
+        <div class="links-wrapper">
+            
+            <a href="https://bit.ly/4qg2fPg" 
+               class="link-card for-men featured" target="_blank">
+                <span class="badge badge-men">For Men Only</span>
+                <span class="label">Crack Her "Attraction Code"</span>
+                <span class="description">Use the 'Scrambler' technique to flip the script and make the girl you want chase YOU obsessively.</span>
+            </a>
+
+            <a href="https://bit.ly/4j3Lp3L" 
+               class="link-card for-women" target="_blank">
+                <span class="badge badge-women">For Women Only</span>
+                <span class="label">Trigger His "Hero Instinct"</span>
+                <span class="description">The secret signal that commands a man's total devotion and makes him yours forever.</span>
+            </a>
+
+            <a href="https://bit.ly/4oZsYi0" 
+               class="link-card" target="_blank">
+                <span class="badge" style="background: #f1f5f9;">Emergency Access</span>
+                <span class="label">The Ex-Recovery Blueprint</span>
+                <span class="description">Stop the breakup and win them back using the 3-step psychological "reset" method.</span>
+            </a>
+
+        </div>
+
+        <div class="footer">
+            &copy; <span id="year"></span> Relationship Intelligence Elite
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
